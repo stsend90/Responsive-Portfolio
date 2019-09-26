@@ -1,10 +1,14 @@
 /* <-- About me --> */
 body {
-    margin: 0px;
+    /* margin: 0px; */
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     background: url(../images/hotel-wallpaper.png);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+    line-height: 0;
 }
 
 header {
@@ -12,7 +16,7 @@ header {
     border-bottom: 1px solid #cccccc;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
-    height: 61px;
+    height: 60px;
     padding-top: 1.5%;
 }
 
@@ -53,12 +57,12 @@ section {
     margin-top: 2%;
 }
 
-#about {
+/* #about {
     padding: 30px 30px 20px 30px;
     widows: 900px;
     margin-left: 350px;
     margin-right: 350px;
-}
+} */
 h1 {
     border-bottom: 2px solid black;
     font-weight: bold;
@@ -66,6 +70,7 @@ h1 {
     width: 91%;
     margin: 3%;
     margin-left: 4%;
+    line-height: 100%;
 }
 
 .about {
@@ -86,7 +91,8 @@ p,
 .paragraph3 {
     padding: 5%;
     padding-top: 0;
-    line-height: 20px;
+    line-height: 14px;
+    margin-bottom: 5%;
     
 }
 
@@ -123,6 +129,7 @@ textarea {
 
 form {
     margin-left: 4%;
+    line-height: 100%;
 }
 h5 {
     background-color: teal;
@@ -149,6 +156,9 @@ a {
 a:link {
     text-decoration: none;
 }
+.portfolio {
+    margin-bottom: 2%;
+}
 .portfolio p {
     position: absolute;
     width: 100%;
@@ -159,3 +169,88 @@ a:link {
     color: white;
 }
 /* <-- End of Portfolio --> */
+
+/* <-- Media Query --> */
+
+@media (max-width: 980px) {
+    .wrapper {
+      width: 100%;
+    }
+    .about {
+      width: 100%;
+    }
+    img {
+        width: 160px;
+        height: 150px;
+    }
+    #profile {
+        width: 150px;
+        height: 150px;
+    }
+    .form {
+      width: 100%;
+    }
+    .portfolio {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+      ::selection {
+      width: 70%;
+    }
+    nav {
+        padding-top: 3%;
+        padding-right: 0;
+        float: left;
+    }
+    img {
+        width: 120px;
+        height: 130px;
+    }
+    #profile {
+        width: 150px;
+        height: 150px;
+    }
+    .about {
+      width: 100%;
+    }
+    .form {
+      width: 100%;
+    }
+    .portfolio {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .wrapper {
+      position: static;
+    }
+    header {
+        background:blue;
+    }
+    nav {
+        position: static;
+        float:left;
+        background: white;
+        padding-right: 0;
+        width: 100%;
+        padding-left: 20%;
+        margin-bottom: 2%;
+    }
+    #container {
+     width: 100%;
+    }
+    .about {
+      width: 100%;
+    }
+    .form {
+      width: 100%;
+    }
+    .portfolio {
+      width: 100%;
+    }
+    #submit {
+        width: 20%;
+    }
+}
