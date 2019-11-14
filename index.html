@@ -1,28 +1,37 @@
-<!-- reset.css -->
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>basic portfolio assignment</title>
+    <title>Updating-portfolio</title>
     <link rel="stylesheet" href="reset/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/about.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet"/>
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <span class="navbar"><h1>AnimeWorld</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav id="navb" class="navbar navbar-expand-lg navbar-dark">            
+        <div class="navbar-brand">
+            <h1><img id="navlogo" src="images/7b0144b59c26bf18b525383292201446.jpg">AnimeWorld</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+                    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-end">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home |<span class="sr-only"></span></a>
+                    <a class="nav-link" href="index.html">Home |<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio |</a>
@@ -33,24 +42,80 @@
             </ul>
         </div>
     </nav>
-       
-    
-    <div class="jumbotron jumbotron-fluid">
-        <div class="card">
-            <h1>About Me</h1>
-            <img class="card-img-left" src="images/profilepic.png" alt="My picture"/>
-            <p>
-                Who am I? I am Tsendpurev Saran. I go by Jay. I'm 29 years old and I like to think of myself as a family man. Currently, I'm enrolled in UCF Coding Bootcamp program in Orlando, Florida.
-            </p>
-            <p>
-                I like to play video games and learn new things(as long as it interest me ^^).
-            </p>
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-            </p>
+        
+    <div class="container">
+        <div class="jumbotron" style="background-color: black">
+            <h2>About Me</h2>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col">
+                    <img class="card" style="width: 200px; height: 200px;" id="profilepic" src="images/profilepic.png" alt="My picture"/>
+                    <br>
+                    <h3 class="smallTitle">Learning progress</h3>
+                    <hr class="my-4">
+                    <div class="jumbotron2">
+                        <p>In progress</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>In progress</p>
+                        <div class="progress">    
+                            <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>    
+                        </div>
+                        <p>In progress</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>In progress</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>In progress</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <p>Who am I? I am Tsendpurev Saran. I go by Jay. I'm 29 years old and I like to think of myself as a family man. Currently, I'm enrolled in UCF Coding Bootcamp program in Orlando, Florida.
+                    </p>
+                    <br>
+                    <p>I like to play sports, video games, watch anime, and learn new things(as long as it interest me ^^).
+                    </p>
+                    <br>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </p>
+                </div>
+            </div>    
         </div>
     </div>
-    <footer>\_(~.^)_/</footer>  
+    <footer class="footer">     
+        <div class="container">
+          <div class="center-text">
+            <span class="copyright">&copy; 2019
+                <span class="copyright__name">Jay Saran</span>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item active">
+                        <a href="https://github.com/Gilbert1391" target="_blank" class="social-media__icon "><span class="sr-only">(current)</span>
+                            <i class="fab fa-github"><br></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/tsendpurev-saran-a39220198/" target="_blank"  class="social-media__icon ">
+                            <i class="fab fa-linkedin-in"><br></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/jay.p.saran" target="_blank" class="social-media__icon ">
+                            <i class="fab fa-facebook-f"><br></i>
+                        </a>
+                    </li>
+                </ul>
+                </span>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
