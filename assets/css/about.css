@@ -7,8 +7,6 @@ body {
     background: url(https://images.unsplash.com/photo-1522333007-49d9d3ff4b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
 }
 
-
-
 #navlogo {
     width: 50px;
     height: 50px;
@@ -35,7 +33,7 @@ h1, h2 {
 }
 
 .my-4 {
-    background: black;
+    background: white;
 }
 
 #navb {
