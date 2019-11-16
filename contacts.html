@@ -16,6 +16,7 @@
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"/>
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
 <body> 
     <nav id="navb" class="navbar navbar-expand-lg navbar-dark">            
@@ -44,19 +45,19 @@
         <div class="jumbotron" style="background-color: black">
             <h1>Contact Page</h1>
             <hr class="my-4">
-            <form>
+            <form action="" class="contact-form">
                 <div class="form-group">
-                    <label for="exampleInputUsername">Username :</label>        
+                    <label for="contactName">Name :<span class="required"></span></label>        
                     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address :</label>
+                    <label for="contactEmail">Email address :<span class="required"></span></label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputComments">Comments :</label>
-                    <textarea style="height: 200px;" class="form-control" aria-label="With textarea">Leave a comment or concern.</textarea> 
+                    <label for="contactMessage">Messages :<span class="required"></span></label>
+                    <textarea style="height: 200px;" class="form-control" aria-label="With textarea" placeholder="Leave a comment or concern"></textarea> 
                 </div>
                 <button type="submit" class="btn btn-outline-light btn-lg">Send</button>
             </form>
@@ -68,6 +69,18 @@
           <div class="center-text">
                 <ul class="nav">
                     <span><img style="height: 50px; width: 50px; border-radius: 50%;" src="images/images.jpg" alt="media img"></span>
+                    <li class="nav-item"> 
+                        <div class="phone">
+                            <ion-icon name="call">                         
+                            </ion-icon> 407.848.6363
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="email">
+                            <ion-icon name="mail">
+                            </ion-icon> stsend90@yahoo.com
+                        </div>
+                    </li>
                     <li class="nav-item active">
                         <a href="https://github.com/stsend90" target="_blank" class="social-media__icon "><span class="sr-only">(current)</span>
                             <i class="fab fa-github"><br></i>
@@ -92,5 +105,6 @@
         </div>
       </footer>
     </div>
+    <script src="/assets/js/app.js"></script>
 </body>
 </html>
