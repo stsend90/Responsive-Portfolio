@@ -11,6 +11,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet"/>
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
 <body> 
     <nav id="navb" class="navbar navbar-expand-lg navbar-dark">            
@@ -37,29 +42,54 @@
 
     <div class="container">
         <div class="jumbotron" style="background-color: black">
-            <h1>Contact</h1>
+            <h1>Contact Page</h1>
             <hr class="my-4">
-            <div class="form">
             <form>
-                <strong>Username :</strong>
-                <br>
-                <input type="text" name="username" onfocus="if(this.value == 'John Smite') {this.value= '';}" onblur="if(this.value == '') {this.value = 'John Smith';}" value="John Smith">
-                <br>  
-                <strong>Email :</strong>
-                <br>
-                <input type="email" name="psw" onfocus="if(this.value == 'example@gmail.com') { this.value = '';}" onblur="if(this.value == '') { this.value = 'example@gmail.com';}" value="example@gmail.com">
-                <br>
-                <strong>Message :</strong>
-                <br>
-                <textarea name="message" name="msg"></textarea>
-                <input type="submit" id="submit" name="Submit">
+                <div class="form-group">
+                    <label for="exampleInputUsername">Username :</label>        
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address :</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputComments">Comments :</label>
+                    <textarea style="height: 200px;" class="form-control" aria-label="With textarea">Leave a comment or concern.</textarea> 
+                </div>
             </form>
         </div>
     </div>
-    </div>
-    <footer>
-        <p>\_~.^_/</p>
-    </footer>
+    
+    <footer class="footer">     
+        <div class="container">
+          <div class="center-text">
+                <ul class="nav">
+                    <span><img style="height: 50px; width: 50px; border-radius: 50%;" src="images/images.jpg" alt="media img"></span>
+                    <li class="nav-item active">
+                        <a href="https://github.com/Gilbert1391" target="_blank" class="social-media__icon "><span class="sr-only">(current)</span>
+                            <i class="fab fa-github"><br></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/tsendpurev-saran-a39220198/" target="_blank"  class="social-media__icon ">
+                            <i class="fab fa-linkedin-in"><br></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/jay.p.saran" target="_blank" class="social-media__icon ">
+                            <i class="fab fa-facebook-f"><br></i>
+                        </a>
+                    </li>
+                </ul>
+                <span class="copyright">&copy; 2019
+                <span class="copyright__name">Jay Saran</span>
+                </span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 </body>
 </html>

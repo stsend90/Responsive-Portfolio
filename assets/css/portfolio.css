@@ -24,8 +24,22 @@ h1 {
     margin-top: 10px;
 }
 
+p {
+    color: black;
+}
+
+.card   {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+li {
+    margin: auto;
+}
+
 footer {
     position: relative;
+    margin-bottom: 0;
     background: black;
     height: 100px;
     padding-top: 5px;

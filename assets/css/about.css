@@ -43,6 +43,7 @@ h1, h2 {
 footer {
     position: relative;
     background: black;
+    margin-bottom: 0;
     height: 100px;
     padding-top: 5px;
 }
