@@ -25,12 +25,8 @@ h1 {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
     background: black;
-    color: whitesmoke;
-    width: 100%;
-    margin-bottom: 0;
-    height: 30px;
-    text-align: center;
+    height: 100px;
+    padding-top: 5px;
 }
