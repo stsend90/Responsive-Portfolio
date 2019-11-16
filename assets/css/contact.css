@@ -33,11 +33,10 @@ li {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
+    position: relative;
+    margin-bottom: 0;
     background: black;
     height: 100px;
     padding-top: 5px;
+    text-align: center;
 }
